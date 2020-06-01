@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- <bean>:定义spring的所管理的一个对象
+	 id:表示该对象的唯一标识 不可以重复 ，在类型获取bean的过程中可以不设置 
+	class:所属类的全限定类名 -->
+
+	<bean class="com.guigu.spring.mod.Person" id="personOne">
+
+		<property name="id" value="11111"></property>
+
+		<property name="name" value="小明"></property>
+
+
+	</bean>
+	
+		<bean class="com.guigu.spring.mod.Person" id="personTwo">
+
+		<property name="id" value="22222"></property>
+
+		<property name="name" value="小红"></property>
+
+
+	</bean>
+
+</beans>
